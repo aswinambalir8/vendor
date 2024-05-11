@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor List</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vendor List</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Contact Details</th>
+                <th>Address</th>
+                <th>Vendor Code</th>
+                <th>On Time Delivery Rate</th>
+                <th>Quality Rating Average</th>
+                <th>Average Response Time</th>
+                <th>Fulfillment Rate</th>
+                <!-- Add headers for other vendor fields as needed -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for vendor in vendors %}
+            <tr>
+                <td>{{ vendor.name }}</td>
+                <td>{{ vendor.contact_details }}</td>
+                <td>{{ vendor.address }}</td>
+                <td>{{ vendor.vendor_code }}</td>
+                <td>{{ vendor.on_time_delivery_rate }}</td>
+                <td>{{ vendor.quality_rating_avg }}</td>
+                <td>{{ vendor.average_response_time }}</td>
+                <td>{{ vendor.fulfillment_rate }}</td>
+                <!-- Add cells for other vendor fields as needed -->
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+</body>
+</html>
