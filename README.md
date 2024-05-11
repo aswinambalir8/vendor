@@ -110,6 +110,7 @@ API Endpoints
 ## Delete Vendor
 
 -> Vendor Detail API: http://localhost:8000/vendors/{vendor_id}/
+
 -> DELETE
 
 
@@ -164,6 +165,7 @@ API Endpoints
 ## Delete Purchase order
 
 -> Purchase Order Detail API: http://localhost:8000/purchase_orders/{po_id}/
+
 -> DELETE
 
 
